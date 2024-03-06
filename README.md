@@ -1,5 +1,7 @@
 # Dart-example-with-json-and-list-of-json-objects
 basic example used as reference 
+```dart
+// Dart-example-with-json-and-list-of-json-objects
 
 import 'dart:convert';
 
@@ -17,8 +19,6 @@ String jsonExample = """
   },
   "key7" : "value7"
 }
-
-
 """;
 
 void main() async {
@@ -87,29 +87,10 @@ class Model {
     };
   }
 }
+```
 
-
-// -------------------; 
-/* output 
-
-
-ahmedmahdi@ahmeds-MacBook-Air verse_program % dart run lib/dart.test.dart
-data converted from json string to dart map
-{key1: Value1, key2: value2, key3: {key31: value31, key32: value32, key33: {key331: value331, key332: value332}}, key7: value7}
------fromJSon-DartMap-----
-data Modeled from json ( dart map )
-Value1
-----ToJSon-DartMap-----
-data Modeled from json ( dart map )
-{key1: Value1, key2: value2, key3: {key31: value31, key32: value32, key33: {key331: value331, key332: value332}}, key7: value7}
-----jsonDartMap to String json encode-----
-{"key1":"Value1","key2":"value2","key3":{"key31":"value31","key32":"value32","key33":{"key331":"value331","key332":"value332"}},"key7":"value7"}
-*/
-
-//--------list of json in json string 
-
-
-/*
+```dart
+// List-of-json-in-json-string
 
 String json1 = """
 {
@@ -181,6 +162,8 @@ void main() {
     print(jsonObject['key2']); // Output: value2
   }
 }
+```
+
 
 
 */
